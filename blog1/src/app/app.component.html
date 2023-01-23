@@ -1,0 +1,172 @@
+<h1>{{title}}</h1>
+<app-header></app-header>
+<form #basicForm = "ngForm" (ngSubmit) = "getData(basicForm.value)">
+    <input type = "text"  ngModel name = "user" placeholder = "Enter Your Name"/>
+    <br/>
+    <br/>
+    <input type = "email" ngModel name = "email" placeholder = "Enter Your Email"/>
+    <br/><br/>
+    <input type = "text" ngModel name = "password" placeholder = "Enter Your Password"/>
+    <br/><br/>
+    <button>Register</button>
+</form>
+
+<ul>
+    <li>{{userData.user}}</li>
+    <li>{{userData.email}}</li>
+    <li>{{userData.password}}</li>
+</ul>
+<button (click) = "toggle()">Toggle</button>
+<h1 *ngIf = "display">
+    
+    Heading Tag
+   <h1>Hello</h1>
+
+</h1>
+
+<p>
+	<ngb-alert [dismissible]="false">
+		<strong>Warning!</strong> Better check yourself, you're not looking too good.
+	</ngb-alert>
+</p>
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+	<ngb-panel title="Simple">
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+	<ngb-panel>
+		<ng-template ngbPanelTitle>
+			<span>&#9733; <b>Fancy</b> title &#9733;</span>
+		</ng-template>
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+	<ngb-panel title="Disabled" [disabled]="true">
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+</ngb-accordion>
+
+<mat-slide-toggle>Toggle me!</mat-slide-toggle>
+<div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+
+  <div class="demo-section">
+    Button with a badge on the left
+    <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+      Action
+    </button>
+  </div>
+
+  <input type = "text" placeholder = "Enter New Task" #task/>
+  <br/><br/>
+  <button (click)="addTask(task.value)">Add Task</button>
+  <ul *ngFor = "let item of list">
+    <li>{{item.name}} <button (click) = "removeTask(item.id)">Remove</button> </li>
+  </ul>
+
+  <app-child [item] = "data4"></app-child>
+  <button (click) = "updateData()">Update Child Componenet</button>
+
+  <app-user-details></app-user-details>
+<ul *ngFor = "let user2 of userDetails2">
+    <app-user-details [item2] = 'user2'></app-user-details>
+  </ul>
+
+  <app-child (updateDataEvent) = "updateData3($event)" ></app-child>
+  <h1>{{data5}}</h1>
+
+  <h1>Two way binding</h1>
+  <input type = "text" [(ngModel)] = "data8">
+  <h3>{{data8}}</h3>
+
+  <h2>Template Reference Variable</h2>
+  <input type = "text" #box3 placeholder = "Enter Your Name">
+  <button (click) = "getVal2(box3.value)">Click Me</button>
+<br/>
+<h1>{{title5 | uppercase}}</h1>
+<h1>{{title5 | lowercase}}</h1> 
+<h3>{{title5}}</h3>
+
+<h2>{{today | date : 'fullDate' }}</h2>
+<!-- <h1>{{ capString{title5}}}</h1> -->
+
+<h1>{{title5 | slice :3:6 | uppercase}}</h1>
+<h2>{{user10 | json |uppercase}}</h2>
+<h2>{{002000.3000 | number : '2.2-3'}}</h2>
+<h2>{{2.3 | number : '3.3-5'}}</h2>
+<h2>{{20 | currency : 'USD' }}</h2>
+<h2>{{20 | currency : 'INR' }}</h2>
+<h1>{{"hello how are you"}}</h1>
+<h2>Custome Pipe</h2>
+<h2>{{20 | usdInr : 100}}</h2>
+<h2>Template Driven Form</h2>
+<form  #loginForm = "ngForm" (ngSubmit) = "userLogin(loginForm.value)">
+  <input type = "text" placeholder = "Enter Your Name" name = "name" ngModel>
+  <br><br>
+  <input type = "password" placeholder = "Enter Password" name = "password" ngModel>
+  <br><br>
+  <button>Login</button>
+
+</form>
+<button (click) = userLogin(loginForm.value)>Out Side Login</button>
+
+<!--
+<form #loginForm1 = "ngForm" (ngSubmit) = "loginUser(loginForm1.value)">
+<input type = "email" required #name1 ="ngModel" pattern = "[a-zA-Z] + $" name = "name1" placeholder = "Enter Name">
+<br/>
+<span *ngIf = "name1.invalid && name1.touched" style = "color:red;">Please enter a valid input</span>
+<br/>
+<input type = "password" name = "password" minlength = "2" required #password1 = "ngModel" placeholder = "Enter your Password">
+<br/>
+<span *ngIf = "password1.invalid && password1.touched" style="color:red;">Please enter a valid input</span>
+<br/>
+<button [disabled] = "loginForm1.invalid">Login</button> 
+</form>
+-->
+<h2>Reactive Form Module</h2>
+<form [formGroup] = "loginForm1" (ngSubmit) = "loginUser1()">
+  <input type = "text" placeholder = "Enter Name" name = "user" formControlName="user">
+
+  <br/><br/>
+  <span style = "color:red;" *ngIf = "user && user.invalid && user.touched" >This field is not valid</span>
+  <br/>
+  <!-- <input type = "email" placeholder="Enter Your Email" name = "email2" formControlName="email2">
+  <br/>
+  <span style = "color:red;" *ngIf = "email2 && email2.invalid && email2.touched">This field is not valid</span>
+  <br/> -->
+  <input type = "password" placeholder = "Enter Password" name = "password" formControlName="password">
+  <br/><br/>
+  <span style = "color:blue;" *ngIf = "password && password.invalid && password.touched" >This field is not valid</span>
+  <br/>
+ 
+  <button [disabled] = "loginForm1.invalid">Login</button>
+</form>
+<h2 >Directive</h2>
+<p appRedEl> Code step by step</p>
+

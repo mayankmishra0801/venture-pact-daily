@@ -1,0 +1,101 @@
+<h1>Hello Angular {{title}}</h1>
+<h1>{{data}}</h1>
+<h2>{{getValue()}}</h2>
+<h2>2+2</h2>
+<h2>{{2+2/4}}</h2>
+<h2>{{title =="14" }}</h2>
+<h2>{{title}}</h2>
+<h1 class = "{{title}}">Hello Angular {{title}}</h1>
+
+ <!-- <h2>{{title = "Helo"}}</h2> 
+  <h2>{{typeof title}}</h2>
+
+  <h3>{{data1++}}</h3> 
+  <app-user-list></app-user-list> -->
+  <app-login></app-login>
+<button (click) ="getName('anil sidhu','Sidhu')">Click Me</button>
+<button (click) = "getData('Hello')">Call function</button>
+<br />
+<br/>
+
+<input type = "text" #box (keyup) = "getData(box.value)" placeholder = "event keyup" />
+<input type = "text" #box1 (keydown) = "getData(box1.value)" placeholder = "event keydown" />
+
+<br/>
+
+<input type = "text" #box2 (blur) = "getData(box2.value)" placeholder  = "event blur" />
+
+<br/> 
+<input type = "text" #box3 (input) = "getData(box3.value)" placeholder = "event input" />
+
+<br/>
+
+<h1 (mouseover) = "getData('over')">Code step by step</h1>
+
+<h1 (mouseleave) = "getData('leave')">Anil Sidhu</h1>
+<h2>{{data11}}</h2>
+<input type = "text"
+#box6
+(keyup)= "getValue2(box6.value)" placeholder = "Enter Your Name" name = "name"/>
+<button (click) = "getValue2(box6.value)">Click </button>
+<p> Box value is {{displayVal2}}</p>
+
+<button (click) = "counter('minus')">--</button>
+<p>Count : {{count}}</p>
+<button (click) = "counter('add')">++</button>
+
+<h1 style = "color:burlywood;" class = "heading1">{{lecture13}}</h1>
+
+<app-login></app-login>
+
+<input type = "text" name = "user-name" value = {{name}} disabled = {{disable}} >
+<br/> <br/>
+<input type = "text" name = "user-name"  [value] = name [disabled] = disable> 
+<h1 *ngIf = "show == 'yes'; then ifBlock1 else elseBlock1">
+    Code Step by Step
+</h1>
+<ng-template #ifBlock1>
+    <h1>If Condition</h1>
+</ng-template>
+<ng-template #elseBlock1>
+    <h1>Else Condition</h1>
+</ng-template>
+
+<ng-template [ngIf] = "color === 'red' ">
+    <h1 style = "color:red;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf] = "color === 'green' ">
+     <h1 style = "color: green;"> Green Color</h1>
+</ng-template>
+<ng-template [ngIf] = "color === 'blue'">
+   <h1 style = "color:blue;">Blue Color</h1>
+</ng-template>
+
+<div [ngSwitch] = "color1">
+    <h1  *ngSwitchCase = "'red'"style="color:red;">Red Color</h1>
+     <h1 *ngSwitchCase = "'green'" style = "color:green;">Green Color</h1>
+     <h1 *ngSwitchCase = " 'blue'" style = "color:blue;">Blue Color</h1>
+     <h1 *ngSwitchCase = " 'orange'" style ="color:orange;">Orange</h1>
+     <h1 *ngSwitchCase = " 'skyblue'" style = "color:skyblue;">SkyBlue</h1>
+     <h1 *ngSwitchDefault  >Unknown Color</h1>
+</div>
+
+<h2 *ngFor = "let item of users">Name is :{{item}}</h2>
+<h3 *ngFor = "let item of userDetails"> {{item.name}} -- {{item.email}} -- {{item.phone}}</h3>
+
+<ul *ngFor = "let usere of users1">
+    <li>Name :{{usere.name}}</li>
+    <li>Phone:{{usere.phone}}</li>
+    <li>Socil Accounts</li>
+    <ul *ngFor = "let account of usere.socialAccounts">
+        <li>{{account}}</li>
+    </ul>
+
+
+</ul>
+
+<h1 [style.color]="color5" >How are you</h1>
+
+<button (click) = "updateColor()">Update Color</button>
+
+<app-header></app-header>

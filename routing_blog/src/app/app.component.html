@@ -1,0 +1,30 @@
+<h1>Routing</h1>
+<a  routerLink= "">Home</a>
+<br/>
+<a routerLink="about">About</a>
+<br/>
+<a routerLink="user">User</a>
+<br/>
+<a routerLink="233">XYZ</a>
+<br>
+<br>
+<a routerLink ="user/20">Anil</a>
+<br>
+<a routerLink ="user/30">Sam</a>
+<br>
+<a routerLink = "user/40">Bhasker</a>
+
+
+<router-outlet></router-outlet>
+<ul>
+    <!-- <li *ngFor = "let data of memberData">
+    {{data.name}}</li> -->
+
+    <li *ngFor = "let user of users">
+        {{user.name}} : {{user.age}}
+    </li>
+</ul>
+
+
+<app-footer></app-footer>
+<app-footer></app-footer>

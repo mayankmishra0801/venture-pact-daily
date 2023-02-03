@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .table {
+       width: 100%;
+        font-size: 14px;
+        border: 2px gray;
+        border-collapse: collapse;
+        border: none;
+        text-align: center;
+        font-family: "Times New Roman", Times, serif;
+        /* table-layout: fixed; */
+        /* overflow: scroll; */
+      }
+      .table-wrap {
+        float: left;
+        width: 100%;
+        overflow: scroll;
+      }
+      th,td {
+        border: 1px solid grey;
+        padding: 8px 12px;
+        line-height: 1.2;
+        white-space: nowrap;
+      }
+      th {
+        background: black;
+        color: white;
+        border: none;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 200;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(179, 184, 190);
+      }
+      tr:hover {
+        background: rgb(3, 17, 1);
+        color: rgb(255,255,255);
+        opacity: 0.3;
+      }
+      tr:nth-child(odd) {
+        background-color: rgb(84, 91, 97);
+      }
+      td {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table-wrap">
+      <table class="table">
+        <tr>
+          <th rowspan="21">
+            S<br />T<br />U<br />D<br />E<br />N<br />T<br />
+            <br />I<br />N<br />F<br />O<br />
+          </th>
+          <th rowspan="2">S.No</th>
+          <th rowspan="2">Name</th>
+          <th colspan="2">College details</th>
+          <th colspan="2">Internship</th>
+        </tr>
+        <tr>
+          <td>NAME</td>
+          <td>STREAM</td>
+          <td>COMPANY</td>
+          <td>COURSE</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Jasnoor Kaur</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturPact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Gursimran</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Nikhil Sood</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Manish</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Rohit Kumar</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Mayank Mishra</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Vinay</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Adarsh</td>
+          <td>GNDEC</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Jassimran</td>
+          <td>GNA</td>
+          <td>MCA</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Harpreet Singh</td>
+          <td>GNA</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>Aryan Sharma</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>Akash Gupta</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturPact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>Anupam Upadhyay</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>Pranshu Yadav</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>Saacket Pandit</td>
+          <td>GNA</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>Prince Sharma</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturePact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>Girija</td>
+          <td>LPU</td>
+          <td>MCA</td>
+          <td>Outgrow</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>Atul</td>
+          <td>LPU</td>
+          <td>MCA</td>
+          <td>VenturePact</td>
+          <td>Front End Developer</td>
+        </tr>
+        <tr>
+          <td>19</td>
+          <td>Ashish</td>
+          <td>LPU</td>
+          <td>BTech</td>
+          <td>VenturPact</td>
+          <td>Full Stack Developer</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

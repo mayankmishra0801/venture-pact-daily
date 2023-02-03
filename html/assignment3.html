@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form class="form">
+     
+      <!-- <fieldset  class="form__filedset"> -->
+        <h2 style="text-align: center;">SignUp Form</h2>
+
+        <div class="form__group">
+          <label class="form__label">Name* </label> &nbsp;&nbsp;&nbsp;&nbsp;
+          <input class="form__input" placeholder="Name" required type="text" />
+        </div>
+        <br />
+        <div class="form__group">
+          <label class="form__label">Email*</label> &nbsp; &nbsp;&nbsp;
+          <input
+            class="form__input"
+            placeholder="ac@domain.com"
+            required
+            type="email"
+          />
+        </div>
+        <br />
+        <div class="form__group">
+          <label class="form__label">Password</label>&nbsp;
+          <input  class="form__input" type="password" placeholder="*****" />
+        </div>
+        <br />
+        <div class="form__group">
+          <label class="form__group__gender">Gender:</label>&nbsp;
+          <input  type="radio" id="male" name="gender" />
+          <label  for="male">Male</label>
+          <input  type="radio" id="female" name="gender" />
+          <label  for="female">Female</label>
+        </div>
+        <br />
+        <div class="form__group">
+          <label  class="form__label">Mobile</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input  class="form__input" type="number" name="" id="" />
+        </div>
+        <br />
+        <div class="form__group">
+          <label class="form__label">Address</label>&nbsp;&nbsp;
+          <textarea  class="form__input"placeholder="Address"></textarea>
+        </div>
+        <br />
+        <div class="form__group">
+          <label class="form__label">City</label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select  class="form__input"name="city" id="city">
+            <option value="">Ludhiana</option>
+            <option value="">Jalandhar</option>
+            <option value="">Phagwara</option>
+          </select>
+        </div>
+        <br />
+        <div class="form__group">
+          <label  class="form__group__skills">Skills:</label>&nbsp;
+          <input  type="checkbox" id="html" />
+          <label for="html"> HTML</label>
+          <input  type="checkbox" id="css" />
+          <label  for="css"> CSS</label>
+          <input  type="checkbox" id="js" />
+          <label  for="js"> JS </label>
+         
+        </div>
+        <br>
+        
+        <button> Submit</button>
+      <!-- </fieldset> -->
+    </form>
+  </body>
+</html>

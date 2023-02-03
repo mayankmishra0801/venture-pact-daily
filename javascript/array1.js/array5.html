@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrom </title>
+</head>
+<body>
+    
+</body>
+<script>
+    var string =  prompt("Please enter a string");
+    var stringArray = string.split('');
+    var stringArrayRev = stringArray.reverse();
+    var revString = stringArrayRev.join('');
+
+    console.log(revString);
+
+    if(string == revString){
+        console.log(`${string}: Is Palindrome`);
+    }
+    else{
+        console.log(`${string}: Is not Palindrome`);
+    }
+</script>
+</html>

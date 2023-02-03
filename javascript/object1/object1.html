@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+<script>
+
+const myObject = {
+        name : "Mayank",
+        Roll_Number : 290534,
+        course : "B.Tech",
+        Program : "IT",
+        Year : "2019-2023"
+    }
+
+    Object.keys(myObject).forEach((i)=>{
+       // console.log(myObject[i]);
+       console.log(i)
+    })
+
+    let value = Object.values(myObject);
+    console.log(value)
+
+
+    let entries = Object.entries(myObject)
+    console.log(entries[2])
+    </script>
+</html>

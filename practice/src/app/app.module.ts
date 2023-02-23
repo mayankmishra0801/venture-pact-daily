@@ -8,13 +8,17 @@ import { FilterPipe } from './Pipes/filter.pipe';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { NextDayComponent } from './next-day/next-day.component';
 import { Assignment4Component } from './assignment4/assignment4.component';
+import { ChangepComponent } from './changep/changep.component';
+import { ChangecComponent } from './changec/changec.component';
 @NgModule({
   declarations: [
     AppComponent,
     TableComponent,
     FilterPipe,
     NextDayComponent,
-    Assignment4Component
+    Assignment4Component,
+    ChangepComponent,
+    ChangecComponent
   ],
   imports: [
     BrowserModule,

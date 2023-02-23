@@ -1,0 +1,94 @@
+{
+  "seller": [
+    {
+      "name": "Anil Sidhu",
+      "email": "anil@seller.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "HHHH Sidhu",
+      "email": "anil@seller.com",
+      "password": "2222c@123",
+      "id": 2
+    },
+    {
+      "name": "KKKKH Sidhu",
+      "email": "anil@seller.com",
+      "password": "2222c@123",
+      "id": 3
+    },
+    {
+      "name": "Rohan Sidhu",
+      "email": "anil@seller.com",
+      "password": "2222c@123",
+      "id": 4
+    },
+    {
+      "name": "Ajay Sidhu",
+      "email": "anil@seller.com",
+      "password": "2222c@123",
+      "id": 5
+    },
+    {
+      "name": "Mrinal",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 6
+    },
+    {
+      "name": "Mrinal",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "Mrinal",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "Mrinal",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "Mrinalab",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 10
+    },
+    {
+      "name": "Mrinalab",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 11
+    },
+    {
+      "name": "Mrinalab",
+      "password": "12345",
+      "email": "mrinal@gmail.com",
+      "id": 12
+    },
+    {
+      "name": "Mayank Mishra",
+      "password": "56677",
+      "email": "abc@123.com",
+      "id": 13
+    },
+    {
+      "name": "Mayank",
+      "password": "56778",
+      "email": "345@gmail.com",
+      "id": 14
+    },
+    {
+      "name": "Apple",
+      "password": "678",
+      "email": "apple@gmail.com",
+      "id": 15
+    }
+  ]
+}

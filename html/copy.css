@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+*, *:before, *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: rgb(228, 222, 222);
+}
+
+img {
+    max-width: 40px
+}
+
+
+
+
+
+header {
+    float: left;
+    width: 100%;
+    background-color: white;
+    height: 60px;
+    padding: 10px 0;
+}
+
+.logo_part img {
+    max-height: 40px;
+}
+
+.logo_part {
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    float: left;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    margin: 10px;
+    float: left;
+}
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.banner {
+    background-image: url('https://img.freepik.com/free-vector/business-presentation-banner-with-blue-geometric-shape_1017-32330.jpg') ;
+    min-height: 603px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+.banner_content {
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section {
+    float: left; 
+    width: 100%;
+    padding: 100px;
+}
+
+.text_center {
+    text-align: center;
+}
+.ab{display: inline-flex;
+padding-left: 25px ;
+
+}

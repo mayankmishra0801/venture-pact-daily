@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tooltip</title>
+    <style>
+       * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tooltip{
+    position: relative;
+    cursor: pointer;
+    border-bottom: 2px solid;
+    padding: 7px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+
+}
+#tooltiptext{
+position: absolute;
+left: 50%;
+top: 0;
+transform: translateX(-50%);
+background-color: #6ec5a1;
+color: #ffffff;
+white-space: nowrap;
+padding: 10px 15px;
+border-radius: 7px;
+opacity: 0;
+transition: opacity 0.5s ease;
+}
+#tooltiptext::before{
+ content: '';
+ position: absolute;
+ left: 50%;
+ top: 100%;
+ transform: translateX(-50%);
+ border: 15px solid;
+ border-color: #3fad6f  #31b38a00  #578e6a00 #2eae3100  ;
+}
+#tooltip:hover #tooltiptext{
+ top: -130%;
+ visibility: visible;
+ opacity: 1;
+}
+    </style>
+</head>
+<body>
+    <div id="tooltip">
+        <span id="tooltiptext"> Tooltip text</span>
+        <span>hover me</span>
+    </div>
+   
+</body>
+</html>

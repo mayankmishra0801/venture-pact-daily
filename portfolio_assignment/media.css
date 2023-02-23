@@ -1,0 +1,101 @@
+
+@media(max-width:767px) {
+    .togle-btn {
+        display: block;
+        float: right;
+        margin: 10px;
+    }
+
+
+
+    nav ul {
+        background-color: #1b7fdc;
+        color: black;
+        float: left;
+        width: 280px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        transform: translateX(-280px);
+        transition: 0.5s;
+        /* position: absolute; */
+        
+
+    }
+
+    nav ul li {
+        width: 100%;
+        margin: 10px;
+        padding: 0;
+    }
+
+    nav ul li a {
+        color: black;
+    }
+
+    .change+ul {
+        display: block;
+        transform: translateX(0px);
+
+    }
+
+    
+
+    span .lines {
+        rotate: 45deg;
+    }
+    .togle-btn.change span:nth-child(1){
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 42px;
+      }
+      .togle-btn.change span:nth-child(2){
+       opacity: 0;
+    }
+      .togle-btn.change span:nth-child(3){
+        transform: rotate(45deg);
+        
+      }
+
+/* erow */
+
+      /* .toggle-btn.change span:nth-child(1){
+        transform: rotate(45deg);
+        top: 14px;
+      }
+      .toggle-btn.change span:nth-child(2){
+       margin-left: -5px;
+    }
+      .toggle-btn.change span:nth-child(3){
+        transform: rotate(-45deg);
+        top: -14px;
+        
+      } */
+
+}
+
+@media screen and (max-width:412px){
+  header,.container,nav,.banner,.row,.about-content,.main-content,.content-graph,.service,.action,.portfolio,.team,.pricing,.question,.contact,.subscribe,.footer-content,.copyright{
+    width:100%
+  }
+}
+@media screen and (max-width:914px){
+  header,.container,nav,.banner,.row,.about-content,.main-content,.content-graph,.service,.action,.portfolio,.team,.pricing,.question,.contact,.subscribe,.footer-content,.copyright{
+    width:100%
+  }
+}
+
+@media screen and (min-width: 300px){
+  h1,h2,h3,h4{
+    font-size: 15px;
+    /* line-height: 20px; */
+  }
+  img{
+    width: 20%;
+    height: 80%;
+  }
+  p{
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+   // vals = [{a:10},{b:20},{c:30}]
+  let vals = [4,8,1,2,9];
+   //console.log(vals);
+
+   function doubler(x){
+    return x*2;
+   }
+
+   vals = vals.map(doubler);
+   console.log(vals);
+
+
+// let arr1 = [], arr2 = [];
+//  arr1 = vals.filter(doubler1);
+// arr2 = vals.filter(doubler2)
+
+
+function doubler1(vals) {
+  return vals >= 10;
+
+
+}
+const result1 = vals.filter(doubler1);
+
+
+
+
+function doubler2(vals) {
+  return vals <10;
+
+
+}
+const result2 = vals.filter(doubler2);
+</script>
+</html>

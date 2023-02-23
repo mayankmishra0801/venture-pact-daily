@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t1{
+          background-color: chartreuse;
+          padding: 15px 32px;
+        display:inline-block;
+        position:relative;
+
+        }
+        .t1 .t2{
+            visibility:hidden;
+            width:120px;
+            background-color: black;
+            color:#fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            /* to display in left */
+            /* top: -5px;
+            right:105%; */
+
+            /* to display in bottom */
+
+            /* top:100%;
+            left:50%;
+            margin-left: -60px; */
+
+            /* to display in top */
+
+            bottom:70%;
+            left:50%;
+
+
+
+
+
+
+
+
+
+        }
+
+        /* :: after is psudo element */
+        .t1 .t2::after{
+            content:" ";
+            position: absolute;
+            top:100;
+
+            /* for center align */
+            left:50%; 
+            margin-left: -5px;
+
+            border-width: 5px;
+            border-style: solid;
+            border-color: black ;
+        }
+        .t1:hover .t2{
+            visibility: visible;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="t1">Hover over me
+        <span class="t2">Tooltip text</span>
+    </div>
+</center>
+</body>
+</html>

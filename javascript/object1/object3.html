@@ -4,23 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>converting array to an object</title>
 </head>
 <body>
     
 <p id="demo"></p>
-
+<p id="demo2"></p>
 <script>
+
+//Object.assign()
+const name = ['Mayank','Mrinal','Good','Vinay','Adarsh']
+const obj = Object.assign({},name)
+
+//const obj = Object.assign({}, names)
+
+console.log(obj)
+// { '0': 'Alex', '1': 'Bob', '2': 'Johny', '3': 'Atta' }
+
+
+//using spread operator
+//{...iterable}
+
+const a1 = {...name}
+console.log(a1)
+//Object.fromEntries()
+const l1 = [
+  ['name','Mayank'],
+  ['age',22]
+]
+const a2 = Object.fromEntries(l1)
+console.log(a2)
+
+
+
+//Array.forEach()
+const obj2 = {}
+
+name.forEach((elem,i)=>{
+  obj2[i] = elem
+})
+
+
+console.log(obj2)
+
 const person = {
-  firstName: "Akhil",
-  lastName: "Sood",
-  id: 2023,
-  fullName: function() {
-    return this.firstName + " " + this.lastName;
-  }
+    firstName:"John",
+    lastName:"Doe"
 };
 
-document.getElementById("demo").innerHTML = person.fullName();
+const propertyName = Object.keys(person);
+console.log(propertyName);
+
+const f = person.entries();
+
+for(let x of f){
+ // document.getElementById("demo2").innerHTML +=x;
+}
+
+
+
+
 </script>
 </body>
 </html>

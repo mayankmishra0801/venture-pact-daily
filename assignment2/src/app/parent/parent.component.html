@@ -1,0 +1,10 @@
+<h1>parent Component!</h1>
+<app-child [child]=" 'html23' "
+   [childVar]="parentData"
+   (btnClick) = "funParent()"
+   (btnClick1) = "funParent1($event)"
+
+></app-child>
+
+{{parentData}}
+<!-- <app-child [child] =" ' abcdef'" [child] -->

@@ -1,0 +1,24 @@
+*,*::after, *::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.heading1{
+    text-align: centre;
+    margin-left: 50%;
+
+    margin-top: 200px;
+    font-size:20px ;
+}
+
+.radio{
+    border:1px solid black;
+    padding: 30px;
+    
+}
+.radio>.radio_item{
+    border:1px solid black
+}
+

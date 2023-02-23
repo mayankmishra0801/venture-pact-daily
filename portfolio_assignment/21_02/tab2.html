@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayank Project</title>
+    <link rel="stylesheet" href="tab2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    </head>
+    <body>
+<header id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a hre="tab1">Content1</a></li>
+                <li><a hre="tab2">Content2</a></li>
+                <li><a hre="tab3">Content3</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="content">
+<div class="tab_content">
+    <div id="tab1" class="bg_gray"><b>Content :</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti excepturi
+        voluptates nobis unde, nulla aliquam totam eos rem minus cum sed! Amet aperiam possimus praesentium rem quasi
+        consequatur nam molestiae?</div>
+    <div id="tab2" class="bg_gray"><b>Content :</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui odio iure magni! Cum
+        magni maxime libero doloremque unde eos, maiores exercitationem voluptas aspernatur debitis ex reiciendis dolor
+        quam veniam non.</div>
+    <div id="tab3" class="bg_gray"><b>Content :</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam quos
+        perferendis consectetur, nam cupiditate blanditiis similique asperiores, cumque officia voluptatem, quidem
+        praesentium nulla. Quos fugit reprehenderit eligendi ullam culpa?</div>
+</div>
+</section>
+<script>
+    $(document).ready(function () {
+        // $("li").click(function(){
+        //     console.log($(this).children('hre'))
+        // })
+
+        $("a").click(function () {
+            var hre = $(this).attr("hre")
+            var id = $("#" + hre)
+            $(this).toggleClass("shadow")
+
+            var arr = []
+            $("div").each(function () {
+                const val = $(this).attr('id')
+                // console.log(val)
+                if (val && val !== hre) {
+                    arr.push(val)
+                }
+            })
+
+            id.show()
+            jQuery.each(arr, function (i, val) {
+                const rid = $("#" + val)
+                rid.hide()
+            })
+        })
+
+    })
+</script>
+</body>
+</html>

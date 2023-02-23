@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./accord.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="accordian">
+          <div class="accoridan_head" id="a1">Lorem ipsum dolor sit amet consectetur</div>
+          <div class="accordian_body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem delectus nemo atque nesciunt, excepturi perspiciatis accusamus ducimus nihil architecto alias! Nemo sapiente sit sunt soluta architecto esse quod, saepe reprehenderit dolore laboriosam quam perferendis reiciendis minus ipsa cum voluptatum itaque dolorem, repudiandae vero quos exercitationem sequi odio? Fugiat accusantium earum esse magnam sequi similique cum facilis rerum unde! Reprehenderit nisi repellendus totam ea nesciunt natus, obcaecati incidunt doloribus nobis, est debitis voluptate. Ad a sint animi quis! Recusandae temporibus reiciendis et suscipit, nisi iure dolore dicta asperiores excepturi pariatur tenetur possimus tempore, nobis laborum alias ex quaerat veritatis ut doloremque?</div>
+        </div>
+        <div class="accordian">
+          <div class="accoridan_head"  id="a2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+          <div class="accordian_body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem delectus nemo atque nesciunt, excepturi perspiciatis accusamus ducimus nihil architecto alias! Nemo sapiente sit sunt soluta architecto esse quod, saepe reprehenderit dolore laboriosam quam perferendis reiciendis minus ipsa cum voluptatum itaque dolorem, repudiandae vero quos exercitationem sequi odio? Fugiat accusantium earum esse magnam sequi similique cum facilis rerum unde! Reprehenderit nisi repellendus totam ea nesciunt natus, obcaecati incidunt doloribus nobis, est debitis voluptate. Ad a sint animi quis! Recusandae temporibus reiciendis et suscipit, nisi iure dolore dicta asperiores excepturi pariatur tenetur possimus tempore, nobis laborum alias ex quaerat veritatis ut doloremque?</div>
+        </div><div class="accordian">
+          <div class="accoridan_head" id="a3">Lorem ipsum dolor sit amet consectetur</div>
+          <div class="accordian_body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem delectus nemo atque nesciunt, excepturi perspiciatis accusamus ducimus nihil architecto alias! Nemo sapiente sit sunt soluta architecto esse quod, saepe reprehenderit dolore laboriosam quam perferendis reiciendis minus ipsa cum voluptatum itaque dolorem, repudiandae vero quos exercitationem sequi odio? Fugiat accusantium earum esse magnam sequi similique cum facilis rerum unde! Reprehenderit nisi repellendus totam ea nesciunt natus, obcaecati incidunt doloribus nobis, est debitis voluptate. Ad a sint animi quis! Recusandae temporibus reiciendis et suscipit, nisi iure dolore dicta asperiores excepturi pariatur tenetur possimus tempore, nobis laborum alias ex quaerat veritatis ut doloremque?</div>
+        </div><div class="accordian">
+          <div class="accoridan_head" id="a4">Lorem ipsum dolor sit amet consectetur,</div>
+          <div class="accordian_body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem delectus nemo atque nesciunt, excepturi perspiciatis accusamus ducimus nihil architecto alias! Nemo sapiente sit sunt soluta architecto esse quod, saepe reprehenderit dolore laboriosam quam perferendis reiciendis minus ipsa cum voluptatum itaque dolorem, repudiandae vero quos exercitationem sequi odio? Fugiat accusantium earum esse magnam sequi similique cum facilis rerum unde! Reprehenderit nisi repellendus totam ea nesciunt natus, obcaecati incidunt doloribus nobis, est debitis voluptate. Ad a sint animi quis! Recusandae temporibus reiciendis et suscipit, nisi iure dolore dicta asperiores excepturi pariatur tenetur possimus tempore, nobis laborum alias ex quaerat veritatis ut doloremque?</div>
+        </div>
+        </div>
+        
+
+        <!-- <h2>Hello World
+            <p>P tag</p>
+        </h2> -->
+<br><br>
+        <!-- <h3>-----</h3> -->
+        <input type="text" name="" id="input" value="">
+        <button id="input_btn">Click</button>
+                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            // one at a time
+            $(document).ready(function(){
+                $(".accoridan_head").click(function(){
+                    const currId = $(this).attr('id')
+                  // a4
+                    $(this).toggleClass("open")
+
+                  var arr = []
+                  $(".accoridan_head").each(function() {
+                      const id = $(this).attr('id')
+                      if(id && id!==currId) {
+                        arr.push(id)
+                      }
+                  })
+
+                  jQuery.each(arr, function(i, val) {
+                    $("#"+val).removeClass("open")
+                })
+
+                })
+
+                $("h2").click( function(){
+                    var htmll= $(this).html();
+                    var text = $(this).text();
+                    $("h3").html(htmll);
+                })
+
+                $("#input_btn").click( function(){
+                    var text = $("#input").val()
+                    alert(text)
+                })
+
+            })
+
+            
+        </script>
+        
+</body>
+</html>

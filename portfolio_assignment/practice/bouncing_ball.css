@@ -1,0 +1,60 @@
+html,body{
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+span{
+
+    width:50px;
+    height:50px;
+   
+    border-radius: 50%;
+    animation-name: bounce;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    background-color: red;
+    position: relative;
+    transform: rotate(360deg);
+    display: inline-block;
+}
+
+span:nth-child(1){
+    background-color: #f806cc;
+    animation-duration: 1s;
+}
+span:nth-child(2){
+    animation-duration: 2s;
+    background-color: #f896ec;
+}
+span:nth-child(3){
+    animation-duration: 3s;
+    background-color: #c806cc;
+}
+span:nth-child(4){
+    animation-duration: 4s;
+    background-color: #f806cc;
+}
+span:nth-child(5){
+    background-color: #e10b81;
+    animation-duration: 5s;
+}
+span:nth-child(6){
+    animation-duration: 6s;
+    background-color: #f806cc;
+}
+span:nth-child(7){
+    animation-duration: 7s;
+    background-color: #f806cc;
+}
+@keyframes bounce{
+    0%{
+        top:0;
+    }
+    50%{
+        top:90%;
+    }
+    100%{
+        top:0;
+    }
+}

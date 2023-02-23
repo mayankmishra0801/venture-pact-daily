@@ -1,0 +1,14 @@
+<app-table></app-table>
+<app-next-day></app-next-day>
+<h1>{{title}}</h1>
+
+<input type="text" name="search" [(ngModel)] = "list" placeholder="Search by">
+<br>
+<br>
+<input type="text" placeholder="Enter New Task" #task/>
+<br><br>
+<button (click)="addTask(task.value)">Add Task</button>
+
+<div *ngFor = "let item of list | filter:list ">
+  <li>{{item.name}} </li>
+</div>

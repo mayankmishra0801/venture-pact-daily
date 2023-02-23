@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* 
+    
+      overflow:auto;
+    */
+
+    /* do not use padding and marigin  use the way to center div */
+
+    /* float disadvantage */
+    /* display:inline code less,to place in centrer;
+    
+    display-inline block : content start from  bottom*/
+
+    /* in float left it start from top */
+
+}
+--root{
+    --color:green;
+}
+a1{
+    background-color: green;
+
+}
+.a1 div{
+    background-color: var(--color);
+    width:250px;
+    height: 250px;
+}
+
+
+
+p{
+    column-count:3;
+    font-size:20px;
+    font-family:sans-serif;
+
+}
+

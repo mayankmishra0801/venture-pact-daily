@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let data = new  Promise((resolve,reject)=>{
+        setTimeout(()=>{
+
+            //resolve("done")
+            resolve({name:"Anil",age:29})
+            reject(("Some issues"))
+        })
+    })
+
+
+    data.then((item)=>{
+       // throw new Error("Data issue")
+        console.warn(item)
+    }).catch((err)=>{
+        console.warn("Catch block")
+    })
+    data.finally((item)=>{
+        console.warn("Finally block",item)
+    })
+   // console.warn(data)
+
+</script>
+</html>

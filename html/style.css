@@ -36,8 +36,8 @@ form{
     padding: 30px 50px;
     width: 480px;
     border-radius: 7px;
-    box-sizing: border-box;
-    background-color: white; 
+    /* box-sizing: border-box; */
+    /* background-color: white;  */
 }
 .h2{
     font-family: sans-serif;

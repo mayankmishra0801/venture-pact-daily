@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+  background: transparent;
+  list-style: none;
+}
+
+body {
+  min-height: 100%;
+  line-height: 1.4;
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ header {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+   width: 100%;
+   padding: 0 15px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root{
+    --primaryColor: #37517E; 
+    /* --secondaryColor:var(--primaryColor) */
+/* } */ */
+
+html{
+    height:100%;
+}
+img{
+    max-width: 100%;
+}
+body{
+    min-height: 100%;
+    line-height: 1.4;
+    color:#222;
+    font-family: "Montserrat",sans-serif;
+}
+.clearfix::after{
+    content:"";
+    display:table;
+    clear:both;
+}
+.container{
+    max-width:1170px;
+    padding: 0 15px;
+    width:100%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #37517E;
+  
+    padding: 24px 0;
+    position: fixed
+   
+}
+.logo_part{
+    float:left;
+    padding: 8px 0;
+}
+
+.logo_part a{
+   color:white;
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+nav{
+    float:right;
+}
+ul.navigation{
+    float:left;
+}
+.h1{
+    font-size: 14px;
+}
+ul.navigation > li{
+    float:left;
+    margin-left: 8px;
+}
+ul.navigation > li a{
+    color:#fff;
+    padding: 16px;
+    float:left;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ul.navigation > li a:hover,
+ul.navigation > li a.active{
+    background-color: var(--secondaryColor);
+}
+
+section{
+    padding: 100px 0;
+}
+section.banner{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(#37517E);
+    /* color:#fff; */
+    min-height: 100vh;
+    
+}
+.banner_content{
+    text-align: center;
+
+}
+.banner_content img{
+    width:240px;
+    margin-bottom: 48px;
+}
+.btn{
+    
+}
+.left{
+
+}
+.right{
+  float:right;  
+}
+
+
+
+

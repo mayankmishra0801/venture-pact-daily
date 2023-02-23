@@ -1,0 +1,19 @@
+<p>next-day works!</p>
+
+<label for="text">Text:</label>
+<input type="text" placeholder="Enter Text" [(ngModel)]="text">
+<br>
+<br>
+<button (click)="myfunction()">submit</button>
+<br>
+<ul>
+ <li *ngFor="let item of array">{{item}}</li>
+</ul>
+<br>
+<label for="Search">Search:</label>
+<br>
+<input type="text" placeholder="enter text" [(ngModel)]="filterstring">
+<p>Search Matches</p>
+<ul>
+<li *ngFor="let item of array | filter : filterstring">{{item}}</li>
+</ul>

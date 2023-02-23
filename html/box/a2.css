@@ -1,0 +1,44 @@
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(127,131,138,0.437);
+}
+
+.container{
+    margin:200px;
+    margin-left: 500px;
+}
+
+h1{
+    margin:15px;
+}
+.label{
+    background-color: #fff;
+    border:1px solid #666;
+    color:#000;
+    padding: 10px 90px 1px 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin:15px;
+    cursor:pointer;
+    background-color: #f7efef;
+    border-radius: 5px;
+}
+.checbox{
+    width:30px;
+    height: 20px;
+}
+.btn{
+    font-size: 20px;
+    margin:15px;
+    padding: 5px 10px 1px 5px;
+    background-color: blue;
+    color:#fff;
+    border-radius: 5px;
+    cursor: pointer;
+}

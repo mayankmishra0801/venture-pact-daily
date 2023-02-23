@@ -1,0 +1,36 @@
+*,*::after,*::before{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    color:#222;
+    line-height: 1.4;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    float:left;
+    width:100%;
+    background: #222;
+}
+
+nav li a{
+    color:white;
+    padding:10px;
+    float:left;
+    cursor:pointer;
+    transition:0.5s;
+}
+nav ul{
+    float:left;
+    width:100%;
+
+}
+nav ul li{
+    float:left;
+    list-style-type:none;
+}

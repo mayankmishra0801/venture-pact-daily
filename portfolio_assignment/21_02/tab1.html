@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="tab1.css">
+</head>
+<body>
+    <a data-tab="tab1">Tab1</a>
+<a data-tab="tab2">Tab2</a>
+<a data-tab="tab3">Tab3</a>
+<div class="tabcontent">
+  <div id="tab1" class="tabcontent1">tabcontent1</div>
+  <div id="tab2" class="tabcontent2">tabcontent2</div>
+  <div id="tab3" class="tabcontent3">tabcontent3</div>
+</div>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script>
+    $(document).ready(function () {
+  $("a").click(function () {
+    var ss = $(this).attr("data-tab");
+    $("#" + ss).show();
+  });
+});
+
+ </script>
+</body>
+</html>

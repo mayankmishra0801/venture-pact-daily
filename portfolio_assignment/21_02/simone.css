@@ -200,6 +200,7 @@ div img{
      align-items: center; 
      display: flex;
      margin:auto;
+     cursor: pointer;
 }
 .wel_btn:hover{
    background-color: #20c997;
@@ -301,6 +302,7 @@ hr{
     padding: 10px 25px;
     border: 2px solid  #20c997;
     opacity: 0.7;
+    cursor: pointer;
 }
 .download_cv:hover{
 
@@ -525,3 +527,151 @@ hr{
     background-color:#6c757d;
     color:white;
   }
+.testimonial{
+
+}
+.testim{
+  /* display: flex;
+  align-items: center; */
+  padding: 50px;
+}
+  .testim > h1{
+    
+    font-size: 40px;
+    font-family: Poppins,sans-serif;
+    padding-left: 360px;
+
+
+  }
+  .testim >h3{
+    opacity: 0.1;
+    font-family: Poppins,sans-serif;
+    font-size: 140px;
+    margin-top: -120px;
+  }
+  .client_data{
+   
+    
+  }
+  .clienttr{
+    padding: 15px;
+  }
+
+  .clientt{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Poppins,sans-serif;
+    background-color: #F8F9FA;
+    margin: 4px;
+    border-radius: 2px;
+  }
+.main_data>h4{
+  text-align: left;
+  color:black;
+}
+  .main_data>h1 {
+    padding-top: 30px;
+    /* display: inline-block; */
+    text-align: left;
+  }
+  .data_p{
+    float: left;
+    padding-top: 20px;
+  }
+  .img_cli{
+    padding: 20px;
+    float: left;
+  }
+  .contact{
+    /* margin:80px; */
+    background-color: #F8F9FA;
+    /* height:100vh; */
+    padding: 80px;
+  }
+  .contact_head{
+    /* display: flex;
+    align-items: center; */
+    text-align: center;
+  }
+  .h1_head{
+    /* margin: auto; */
+     font-size: 40px;
+     font-family: Poppins,sans-serif;
+     /* margin-left: 280px; */
+     /* margin-top: 40px; */
+     /* padding-bottom: -490px; */
+     /* margin-top: 60px; */
+     padding-top: 0px;
+     
+  }
+  .h2_head{
+    opacity:0.1;
+    font-size: 100px;
+    font-family: Poppins,sans-serif;
+    margin-top: -100px;
+
+    /* margin-bottom: 60px; */
+
+  }
+  .contact_form1{
+    background-color: #f8f9fa;
+  }
+  #text{
+    width:100%;
+    height:80px;
+    border-radius: 10px solid;
+    margin:auto;
+  }
+
+  .message_btn{
+    padding: 20px;
+  }
+
+
+  .send_btn{
+    margin: 25px;
+    background-color: #20c997;
+    color:white;
+    border-radius:20px ;
+    text-align: center;
+    padding: 10px 25px;
+    border: 2px solid  #20c997;
+    opacity: 0.7;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+
+}
+.send_btn:hover{
+
+    opacity: 1;
+
+}
+
+.footer{
+  color:#252b33;
+}
+.footer_data{
+  font-size: 15px;
+  
+}
+.footer_sim{
+  color:#20c997;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.footer_sim:hover{
+  opacity: 1;
+}
+.footer_right{
+  /* float:right; */
+  right:0;
+  /* width:100%; */
+  float: right;
+  font-size: 15px;
+  /* padding-bottom: 60px; */
+  align-items: end;
+}
+.data_footer{
+  padding: 60px;
+}

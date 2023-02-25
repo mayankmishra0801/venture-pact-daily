@@ -1,0 +1,45 @@
+.side_list{
+    width:200px;
+    background-color: #fff;
+  }
+  .side_list li{
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  
+  .modal{
+    position: fixed;
+    inset:0;
+    display: grid;
+    place-items: center;
+   
+  
+  }
+  .modal_content{
+    width:100%;
+    max-width:600px ; 
+    border:2px solid green; 
+  
+  }
+
+  .btn{
+    background-color: green;
+    color:white;
+  }
+
+  .modal_footer{
+    float:right;
+  }
+  .btn-primary{
+    background-color: blue;
+    
+    color:white;
+  }
+  .btn-close{
+   background-color: red;
+   color:white;
+  }
+
+  .def{
+   
+  }

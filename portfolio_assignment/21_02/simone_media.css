@@ -1,0 +1,92 @@
+@media (max-width:768px){
+    .aside{
+        display: none;
+    }
+    .main{
+        width:100%;
+        margin-left:0;
+        /* margin-right: 0; */
+        
+    }
+}
+@media (max-width:425px){
+    /* .main{
+        width:100%;
+    } */
+   
+    .testim > h3{
+       font-size: 10px;
+    }
+    .res_ser{
+        width:100%;
+    }
+    .know_head{
+        font-size: 30px;
+        padding-bottom: -40px;
+    }
+    .know_head > p{
+        font-size: 20px;
+    }
+    .aside{
+        width:100%;
+    }
+    .what_h{
+        width:30%;
+       
+    }
+    .what_h2{
+        font-size: 5px;
+        /* margin-right: 0; */
+        /* overflow: hidden; */
+    }
+
+     /* .welcome .know_me .vertical .what .resume .myskill
+     .downloas_cv2 .client_data .contact .contact_form1 .data_footer{
+        width:100%;
+     } */
+
+     /* .mob_contact{
+        /* height:60px; */
+        /* width:20px; */
+     /* }
+     .abc textarea{ */
+        /* width:100%;
+     } */ 
+   img{
+    width:100%
+   }
+     /* .know_head1{
+        width:100%;
+     } */
+     .list-style-2{
+            margin-bottom: 100%;
+     }
+     .welcome{
+        background-size: cover;
+        width:100%
+     }
+     .col-4{
+        width: 100%;
+     }
+     /* textarea{
+        width:50px !important;
+     } */
+     .col-42{
+        width:100%;
+     }
+     /* .contact_head{
+        /* width:100%; */
+     /* .col-4a .welcome1 .welcome_btn .know_head{
+        width:100%;
+     } */
+     .col_4a{
+        width:100%;
+
+     }
+     .col-8a{
+        width:100%;
+     }
+
+
+
+}

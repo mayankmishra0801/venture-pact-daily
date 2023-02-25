@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="simone.css" />
+    <link rel="stylesheet" href="simone_media.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
   </head>
   <body>
     <div class="aside">
@@ -31,7 +34,7 @@
             </ul>
           </div>
         </div>
-        <div class="social-icon">
+        <div class="social-icona">
           <a href=""><i class="fa-brands fa-facebook-f"></i></a>
           <a href=""><i class="fa-brands fa-twitter"></i></a>
           <a href=""><i class="fa-brands fa-dribbble"></i></a>
@@ -57,19 +60,20 @@
     <section>
       <div class="know_me">
         <div class="container">
-          <div class="know_head">
-            <h1 class="text_align">Know Me More</h1>
-            <h1 class="text_align about">About Me</h1>
-            <hr />
+          <div class="know_head ">
+            <h1 class="text_align mainHeading">Know Me More</h1>
+            <p class="text_align about mainHeading">About Me</p>
+            <!-- <hr /> -->
+            <!-- <h2 class="title2">Know Me More</h2> -->
           </div>
-          <div class="know_head_child">
+          <div class="know_head_child ">
             <!-- <div class="col-8p"> -->
-            <div class="col-8a">
+            <div class="col-8a know_head1">
               <h1>
                 I'm <span class="know_span1">Simone Olivia,</span> a Web
                 Developer
               </h1>
-              <p>
+              <p know_head1>
                 I help you build brand for your business at an affordable price.
                 Thousands of clients have procured exceptional results while
                 working with our dedicated team. when an unknown printer took a
@@ -83,7 +87,7 @@
             </div>
 
             <!-- <div class="col-4p"> -->
-            <div class="col-4a">
+            <div class="col-4a know_head1">
               <ul class="list-style-2">
                 <li><span class="li_name">Name:</span>Simone Olivia</li>
                 <li>
@@ -101,23 +105,47 @@
         </div>
       </div>
     </section>
+<!-- <section>
+  <div class="container">
+    <div class="heading">
+      <div class="row">
+        <div class="col-8">
+          <div class="about-content">
+            <p></p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="about-content">
+            <ul>
+              <li>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
     <section>
       <div class="vertical">
         <div class="container">
           <div class="row">
-            <div class="col-3a year">
+            <div class="col-3a">
               <h1>10+</h1>
               <p>Years Experiance</p>
             </div>
-            <div class=" col-3a happy">
+            <div class=" col-3a">
               <h1>250+</h1>
               <p>Happy Clients</p>
             </div>
-            <div class=" col-3a project">
+            <div class=" col-3a">
               <h1>650+</h1>
               <p>Projects Done</p>
             </div>
-            <div class=" col-3a award">
+            <div class=" col-3a">
               <h1>38</h1>
               <p>Get Awards</p>
             </div>
@@ -130,38 +158,56 @@
             <div class="container">
                 <div class="what_content">
                     <div class="what_h">
-                        <h1 class="what_h1">What I Do?</h1>
-                        <h2 class="what_h2">SERVICES</h2>
+                        <h1 class="what_h1 text_align mainHeading">What I Do?</h1>
+                         <h2 class="what_h2">SERVICES</h2> 
+                         <!-- <h2 class="title2">Know Me More</h2> -->
+                       
                     </div>
                     <div class="row_what">
                        <div class="col-2a">
                         <div  class="">
+                          <div class="role_icon">
+                          <a href=""><i class="fa-solid fa-palette"></i></a></div>
                            <h1>Graphic Design</h1>
                            <p class="wp">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                            </div>
                        
                       
-                       <div >
+                       <div class="res_ser">
+                        <div class="role_icon">
+                        <a href=""><i class="fa-solid fa-pen-ruler"></i></a></div>
                              <h1>UI/UX Design</h1>
                              <p class="wp">Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                        </div>
-                       <div >
+                       <div class="res_ser" >
+                        <div class="role_icon">
+                        <a href=""><i class="fa-solid fa-chart-area"></i></a>
+                       </div>
                         <h1> Business Analysis</h1>
                         <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                     </div>
                        </div>
                        <div class="col-2a">
-                        <div>
-                            <h1>Web Design</h1>
+                        <div class="res_ser">
+                          <div class="role_icon">
+                          <a href=""><i class="fa-solid fa-desktop"></i></a>
+                          </div> 
+                          <h1 >Web Design</h1>
                             <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                        </div>
-                        <div>
-                            <h1>App Design & Develop</h1>
+                        <div class="res_ser">
+                          <div class="role_icon">
+                          <a href=""><i class="fa-solid fa-paintbrush"></i></a>
+                        </div>  
+                          <h1>App Design & Develop</h1>
                             <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                        </div>
                        
-                       <div >
-                          <h1>SEO Marketing</h1>
+                       <div class="res_ser">
+                      <div class="role_icon">
+                        <a href=""><i class="fa-solid fa-bullhorn"></i></a>
+                        </div> 
+                        <h1>SEO Marketing</h1>
                           <p>Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.</p>
                        </div>
                     </div>
@@ -174,8 +220,9 @@
         <div class="container">
             <div class="content_resume">
                 <div class="head_resume">
-                    <h1 class="text_align">Resume</h1>
+                    <h1 class="text_align mainHeading">Resume</h1>
                     <h2 class="text_align">SUMMARY</h2>
+                    <!-- <h2 class="title2">Know Me More</h2> -->
                 </div>
                 <div class="row_resume">
                     <div class="col-6 edu">
@@ -328,16 +375,16 @@
           </div>
         </section> -->
 
-        <section>
+        <!-- <section>
           <div class="testimonial">
             <div class="container">
               <div class="testim">
-                <h1>Client Speak</h1>
+                <h1 class="text_align mainHeading">Client Speak</h1>
                  <h3>TESTIMONIAL</h3>
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
         <section>
 
           <div class="client_data">
@@ -349,12 +396,18 @@
                          <img src="https://harnishdesign.net/demo/react/simone/demo/images/testimonial/client-sm-3.jpg">
                          </div>
                          <h1>Dennis Jacques</h1>
-                         <h4>User from USA</h4>
+                         <p>User from USA</p>
                    </div>
                    <div class="data_p">
                     <p>"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, minima exercitationem dicta eveniet libero cupiditate odit provident veritatis omnis labore nostrum harum nisi hic quae deserunt. Quibusdam totam eveniet odio?"</p>
                    </div>
-                   <i class="fas fa-star text-warning"></i>
+                   <span class="star">
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                    <i class="fa-sharp fa-solid fa-star"></i>
+                   </span>
                 </div>
                 <div class="col-6 clientt">
                       <div class="main_data">
@@ -362,12 +415,18 @@
                         <img src ="https://harnishdesign.net/demo/react/simone/demo/images/testimonial/client-sm-1.jpg">
                       </div>
                         <h1>Jay Shah</h1>
-                        <h4>Founder at Icomatic Pvt Ltd</h4>
+                        <p>Founder at Icomatic Pvt Ltd</p>
                       </div>
                       <div class="data_p">
                         <p>"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, itaque officia nihil nostrum dicta, dolore maxime aliquam id ex qui assumenda? Mollitia nulla corporis iure maiores, consequatur cum minima officia!"</p>
                       </div>
-                      <i class="fas fa-star text-warning"></i>
+                      <span class="star">
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                        <i class="fa-sharp fa-solid fa-star"></i>
+                      </span>
                 </div>
               </div>
             </div>
@@ -387,8 +446,10 @@
             <div class="container">
               
                 <div class="contact_head">
-                  <h1 class="h1_head">Get in Touch</h1>
-                  <h2 class="h2_head">CONTACT</h2>
+                <!-- <h2 class="title"></h2> -->
+                  <h1 class="h1_head text_align mainHeading">Get in Touch</h1> 
+                  <!-- <h2 class="h2_head">CONTACT</h2>
+                   <h2 class="title2  text-align mainHeading">Know Me More</h2> -->
                 </div>
                 </div>
                
@@ -397,35 +458,49 @@
                 <div class="contact_form1">
                   <div class="container">
                   <div class="col-4">
-                    <h1>ADDRESS</h1>
-                    <h4>4th Floor, Plot No.22,</h4><br>
+                    <h1 class="add-para1">ADDRESS</h1>
+                    <p class="add-para">4th Floor, Plot No.22,</p>
 
-                    <h4>  145 Murphy Canyon Rd.</h4>
-                    <br>
-                      <h4>San Diego CA 2028</h4>
+                    <p class="add-para">  145 Murphy Canyon Rd.</p>
+                    
+                      <p class="add-para">San Diego CA 2028</p>
+                <p class="add-para2"><span><i class="fa-solid fa-phone"></i></span>(060) 444 434 444</p>
+                <p class="add-para2"><span><i class="fa-solid fa-fax"></i></span>(060) 555 545 555</p>
+                 <p class="add-para2"><span><i class="fa-solid fa-envelope"></i></span>chat@simone.com</p>
+      
                       <div class="message_btn">
-                        <div class="col-6">
+                        <div class="col-6 follow">
                             <h1>FOLLOW ME</h1>
+                            <!-- <div class="social_icon"></div> -->
+                            <ul class="social_icon2">
+                              
+                              <li><i class="fa-brands fa-dribbble"></i></li>
+                              <li><i class="fa-brands fa-twitter"></i></li>
+                              <li><i class="fa-brands fa-facebook"></i></li>
+                              <li><i class="fa-brands fa-google"></i></li>
+                            </span>
+                            </ul>
                         </div>
                        
                       </div>
 
                   </div>
-                  <div class="col-8">
+                  <div class="col-8 contact_h mob_contact">
                     <h1>SEND US A NOTE</h1>
-                    <div>
-                      <div class="col-6">
+                    <div class="col-42">
+                      <div class="col-6 abc">
                       
                          <input type="text" placeholder="Name">
                         </div>
-                        <div class="col-6">
+                        <div class="col-6 abc">
                          <input type="email" placeholder="Email">
                         </div>
                         
                     
-                      <div class="col-12">
-                        <input type="textarea" placeholder="Tell us more about ypur needs......" id="text">
-                        <div class="col-6">
+                      <div class="col-12 abc">
+                        <textarea name="text" cols="48" rows="10" placeholder="Tell us more about ypur needs......" >
+                        </textarea>  
+                        <div>
                           <button class="send_btn">Send Message</button>
                         </div>
                       </div>
@@ -440,18 +515,21 @@
         <section>
           <div class="footer">
             <div class="container">
-              <div class="data_footer">
+              <div class=" data_footer">
               <div class="footer_data">
-                <h2>Copyright © 2023 <span class="footer_sim">Simone</span>. All Rights Reserved.</h2>
+                <p>Copyright © 2023 <span class="footer_sim">Simone</span>. All Rights Reserved.</p>
               </div>
+              <div class="">
               <div class="footer_right">
-                <h3>Terms & Policy
-                  Disclaimer</h3>
+                <p>Terms & Policy |
+                  Disclaimer</p>
+              </div>
               </div>
             </div>
           </div>
           </div>
         </section>
+        
    
     
 </main>

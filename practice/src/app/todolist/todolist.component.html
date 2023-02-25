@@ -1,0 +1,21 @@
+<p>todolist works!</p>
+
+<h1>Enter Your Detail</h1>
+
+<div class="card">
+    <form>
+    <input type="text" class="name-text" placeholder="Enter Your name" [(ngModel)]="text1">
+    <br>
+    <input type="date" id="birthday" placeholder="Enter Your DOB" [(ngModel)]="date1">
+     <br>
+    <button (click) = "myfunctionAdd()" id="add_btn">Add</button>
+    <!-- <button (click) = "myfunctionEdit()" id = "edit_btn">Edit</button> -->
+     
+
+    
+
+</form>
+
+<app-detail-todo></app-detail-todo>
+
+

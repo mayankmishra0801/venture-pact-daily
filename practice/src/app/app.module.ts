@@ -10,6 +10,8 @@ import { NextDayComponent } from './next-day/next-day.component';
 import { Assignment4Component } from './assignment4/assignment4.component';
 import { ChangepComponent } from './changep/changep.component';
 import { ChangecComponent } from './changec/changec.component';
+import { TodolistComponent } from './todolist/todolist.component';
+import { DetailTodoComponent } from './detail-todo/detail-todo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +20,9 @@ import { ChangecComponent } from './changec/changec.component';
     NextDayComponent,
     Assignment4Component,
     ChangepComponent,
-    ChangecComponent
+    ChangecComponent,
+    TodolistComponent,
+    DetailTodoComponent
   ],
   imports: [
     BrowserModule,

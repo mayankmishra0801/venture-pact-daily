@@ -500,13 +500,15 @@ hr{
   }
   .year{
     padding: 10px;
-    color:white;
-    /* background-color: #20c997; */
+    /* color:white; */
+    background-color: #20c997;
     border-radius: 5px;
     width:100px;
     height: 40px;
     padding: 10px;
   }
+
+  
   .content_resume{
     padding-bottom: 40px;
   }
@@ -536,6 +538,8 @@ hr{
     text-align: right;
     padding: 1%;
     margin-top:10px;
+   
+  
   }
   .skill span{
     position: absolute;
@@ -543,6 +547,7 @@ hr{
     top:0;
     bottom: 0;
     background-color: #20C997;
+    
   }
 
    

@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    &::after,
+    &::before{
+        @extend *;
+    }
+}
+
+body{
+    line-height: 1.4;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: normal;
+    
+}

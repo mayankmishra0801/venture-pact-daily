@@ -1,0 +1,17 @@
+@mixin border($width, $color){
+     border: $width solid $color;
+}
+
+@mixin margin($position,$unit){
+    margin-#{$position}: $unit + px;
+}
+
+@mixin padding($positon,$unit){
+    padding-#{$position}: $unit + px;
+}
+@mixin FlexBox($A, $J){
+    display: flex;
+    align-items: $A;
+    justify-content: $J;
+    
+}

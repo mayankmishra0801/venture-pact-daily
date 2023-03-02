@@ -1,0 +1,19 @@
+@for $i from 1 through 12{
+    .col-#{$i}{
+        width:100%/$i
+    }
+}
+[class*='col-']{
+    float:left;
+    padding: 0 15px;
+}
+
+
+@for $i from 1 to 12{
+    .col-#{$i}{
+        width:100%/$i;
+    }
+}
+
+// through
+

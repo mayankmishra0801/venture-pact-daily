@@ -1,0 +1,108 @@
+h2.title::after{
+  content:'ABOUT ME';
+
+}
+.about-content,.list{
+  margin: 48px 0 0 0;
+  padding: 0 12px;
+}
+.about-content h2{
+  margin:0 0 16px;
+  font-size: 28px;
+  color:#252b33
+}
+.about-content h2 span{
+  font-size: 28px;
+  color:#20c997;
+}
+
+.about-content .para1, .para2{
+  margin-bottom: 12px;
+}
+.about-year {
+  width: 100%;
+  border-right:1px solid #ddd;
+  margin-top: 40px;
+  text-align: center;
+}
+.line{
+  border: none;
+
+}
+.about-year h4{
+  font-size: 48px;
+  color:#6c757d;
+}
+
+.about-year span{
+  color:#4c4d4d;
+  font-size: 16px;
+}
+.about-list{
+  /* padding-left:24px; */
+}
+.list li{
+  padding: 12px 0;
+  font-size: 16px;
+  border-bottom: 1px solid gray;
+}
+.list li label{
+  color:#4c4d4d;
+  font-weight: 600;
+
+}
+.list li span{
+  margin: 0 8px 0 0;
+  font-weight: 500;
+}
+.list li .email{
+  color: #20c997;
+  font-weight: 600;
+}
+.btn{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.btn a{
+  border:1px solid #20c997;
+  background-color: #20c997;
+  padding: 15px 30px;
+  border-radius: 30px;
+}
+.btn a:hover{
+  color:white;
+  opacity: 0.8;
+}
+
+
+@media(max-width:768px){
+  .about-mobile{
+    width: 100%;
+
+   }
+   .about-tab{
+    width:50%;
+
+   }
+}
+
+/* @media(min-width:375px){
+  .about-phone{
+    width: 100%;
+  }
+  .about-exp{
+    width:50%
+  }
+} */
+
+/* @media(min-width:320px){
+  .about-phone{
+    width: 100%;
+  }
+  .about-exp{
+    width:50%;
+  }
+} */
+
+

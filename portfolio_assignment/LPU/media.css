@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px){
+  
+    
+    .abcd{
+        width:100%;
+        clear: both;
+        /* display: table; */
+        /* content: ""; */
+    }
+    .stude_prep{
+        clear: both;
+        display: table;
+        content: "";
+    }
+
+
+
+
+}

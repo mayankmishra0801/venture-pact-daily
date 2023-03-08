@@ -1,0 +1,15 @@
+<button (click) = "Delete"></button>
+<p>home works!</p>
+<!-- <button (click) -->
+<div class="cookiebox" *ngIf="cookiebox">
+    <div class="txtbox">
+      <span>
+        By using our site, you acknowledge that you read and understad our cookie policy,
+        Privacy Policy and our Terms of service.
+      </span>
+    </div>
+    <div class="btnbox">
+      <button class="btn1" (click) = "Decline()">Decline</button>
+      <button class="btn2" (click)="Allow()">Allow Cookies</button>
+    </div>
+</div>

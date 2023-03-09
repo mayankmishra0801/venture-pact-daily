@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="lpu.css">
     <link rel="stylesheet" href="media.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-     <script src="lpu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<!-- <script src="lpu.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
@@ -49,15 +55,38 @@
     </header>
 
     <main>
-    <section>
+    <section class="banner">  
+       
         <div class="container">
              <div class="col-6 faang">
                 <h2>Top Placements with <br><span class="sp1">FAANG and Fortune<br> 500 </span>Companies</h2>
                 <p>Go from diagrams, wireframes and prototypes without<br> switching apps or updating across platforms.</p>
              </div>
-             <div class="col-6 sanjay">
-                <img src="./img/Sanjay Gandhi 1.png">
+             <!-- <div class="col-6 sanjay owl-carousel owl-theme">
+                <div class="carousel-item">
+               
+            
+            </div> -->
+            <div class="col-6 owl-carousel testimona" id="testimonial">
+                <div class="item testimon">
+                    <img src="./img/Sanjay Gandhi 1.png">
+                </div>
+            <div class="item testimon">
+                <img src="./assets/img/heroPic/40l.jpeg">
+            </div>
+                <div class="item testimon">
+                <img src="./assets/img/heroPic/46l.jpeg">
+            </div>
+            <div class="item testimon">
+                <img src="./assets/img/heroPic/48l.jpg">
+            </div>
              </div>
+
+           
+
+
+
+
         </div>
     </section>
     <section>
@@ -76,7 +105,7 @@
                    
                     <div class="accordian">
                       <div class="accoridan_head" id="a1">Highest No. of Offers in Region from Cognizant and Capgemini 
-                    </div>
+                        </div>
                       <div class="accordian_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, non!
                     </div>
                     </div>
@@ -112,8 +141,8 @@
 
         </div>
     </section>
-    <section class="clearfix">
-        <div class="container">
+    <section class="">
+        <div class="container clearfix">
             <div class="stude_prep ">
                 <div class="row">
                     <div class="col-6 one_crore">
@@ -165,8 +194,50 @@
         </section>
         <section>
             <div class="container">
-                <div class="company_name">
-                   <img src="./img/brand1.png"> 
+                <div class="company_name owl-carousel" id="testimonial2">
+                   <!-- <img src="./img/brand1.png">  -->
+                   <div class="item brand_logo">
+                    <img src="img/adityaBirla.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/zuri.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/oyo.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/mindtree.png">
+                   </div>
+                   <div class="item brand_logo">
+                    
+                   <img src="img/high_radius.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/netskope.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/united.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/cgi.png">
+
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/kent.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/mindtree.png">
+                   </div>
+                   <div class="item brand_logo">
+                    <img src="img/mindtree.png">
+                   </div>
+                   
+                   
+                   
+                  
+                   
+                 
+                  
                 </div>
             </div>
         </section>
@@ -306,9 +377,57 @@
             <h2>Super Dream <span class="sp1">Placements</span></h2>
             </div>
       
-        
-          
-           <div class="row clearfix">
+          <div class="ctc1">
+            <div>
+                <h2>CTC <span class="sp2">30 Lacs</span><br>or <span class="sp2">above</span></h2>
+            </div>
+            <div>
+                <img src="./img/utkarsh.png">
+                <h2>Utkarsh Kumar</h2>
+                <p>LPU Alumni, Class of 2007</p>
+                <img src="./img/byjus.png">
+            </div>
+            <div>
+                <img src="./img/utkarsh.png">
+                <h2>Utkarsh Kumar</h2>
+                <p>LPU Alumni, Class of 2007</p>
+                <img src="./img/microsoft.png">
+            </div>
+            <div>
+                <img src="./img/utkarsh.png">
+                <h2>Utkarsh Kumar</h2>
+                <p>LPU Alumni, Class of 2007</p>
+                <img src="./img/google.png">
+            </div>
+          </div>
+          <div class="ctc2">
+
+            <div>
+            <h2>CTC <span class="sp2">20 Lacs</span><br>or <span class="sp2">above</span></h2>
+          </div> 
+          <div>
+            <img src="./img/utkarsh.png">
+            <h2>Utkarsh Kumar</h2>
+            <p>LPU Alumni, Class of 2007</p>
+            <img src="./img/byjus.png">
+          </div> 
+          <div>
+            <img src="./img/utkarsh.png">
+            <h2>Utkarsh Kumar</h2>
+            <p>LPU Alumni, Class of 2007</p>
+            <img src="./img/microsoft.png">
+          </div>
+          <div>
+            <img src="./img/utkarsh.png">
+            <h2>Utkarsh Kumar</h2>
+            <p>LPU Alumni, Class of 2007</p>
+            <img src="./img/google.png">
+          </div>
+        </div>
+             
+            
+
+           <!-- <div class="row clearfix">
             <div class="ctc30">
             <h2>CTC <span class="sp2">30 Lacs</span><br>or <span class="sp2">above</span></h2>
             <div class="col-3 ">
@@ -356,7 +475,7 @@
                     <img src="./img/google.png">
                 </div>
                 </div>
-                </div>
+                </div> -->
                 <div>
                     <form>
                         <label for="">View More</label>
@@ -368,8 +487,7 @@
                 </div>
 
             </div>
-    </div>
-    </div>
+    
   </section>
 
   <section class="">
@@ -459,28 +577,55 @@
   </section>
   <section  class="speak">
     <div class="container">
-        <div class="speak_placement">
-            <h2>What <span class="sp1">Industry and students</span> Speaks<br>about <span class="sp1">LPU Placements</span></h2>
-            <img src="img/Aditya Pal Singh (Informatica) 1.png">
-            <h2 class="aditya">Aditya Pal Singh</h2>
-            <div class="speakp">
-            <p class="director">Direct Head, Talent Acquisition</p>
-            <p class="fruitful">Recruiting from LPU has always been fruitful to us, no matter what the requirement is, this <br>campus always has the best to offer. Being a strategic partner, LPU can be called one of the<br> best talent pools as they have understood the demand of the industry and well equipped<br> students with the same.</p>
+        <div class="owl-carousel" id="testimonial">
+            <div class="item">
+                <div class="speak_placement">
+                    <h2>What <span class="sp1">Industry and students</span> Speaks<br>about <span class="sp1">LPU Placements</span></h2>
+                    <img src="img/Aditya Pal Singh (Informatica) 1.png">
+                    <h2 class="aditya">Aditya Pal Singh</h2>
+                    <div class="speakp">
+                    <p class="director">Direct Head, Talent Acquisition</p>
+                    <p class="fruitful">Recruiting from LPU has always been fruitful to us, no matter what the requirement is, this <br>campus always has the best to offer. Being a strategic partner, LPU can be called one of the<br> best talent pools as they have understood the demand of the industry and well equipped<br> students with the same.</p>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="speak_placement">
+                    <h2>What <span class="sp1">Industry and students</span> Speaks<br>about <span class="sp1">LPU Placements</span></h2>
+                    <img src="img/Aditya Pal Singh (Informatica) 1.png">
+                    <h2 class="aditya">Aditya Pal Singh</h2>
+                    <div class="speakp">
+                    <p class="director">Direct Head, Talent Acquisition</p>
+                    <p class="fruitful">Recruiting from LPU has always been fruitful to us, no matter what the requirement is, this <br>campus always has the best to offer. Being a strategic partner, LPU can be called one of the<br> best talent pools as they have understood the demand of the industry and well equipped<br> students with the same.</p>
+                </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="speak_placement">
+                    <h2>What <span class="sp1">Industry and students</span> Speaks<br>about <span class="sp1">LPU Placements</span></h2>
+                    <img src="img/Aditya Pal Singh (Informatica) 1.png">
+                    <h2 class="aditya">Aditya Pal Singh</h2>
+                    <div class="speakp">
+                    <p class="director">Direct Head, Talent Acquisition</p>
+                    <p class="fruitful">Recruiting from LPU has always been fruitful to us, no matter what the requirement is, this <br>campus always has the best to offer. Being a strategic partner, LPU can be called one of the<br> best talent pools as they have understood the demand of the industry and well equipped<br> students with the same.</p>
+                </div>
+                </div>
+            </div>
         </div>
-        </div>
+        
     </div>
   </section>
   <section class="student_diversity">
     <div class="container ">
-        <div class="row diversity1">
+        <div class="row diversity1 owl-carousel" id="testimonial3">
             
-            <div class="col-3 ">
+            <div class=" item diversity2">
                 <img src="./img/karan_mittal.png">
                 <p class="sp1">Students' diversity and interaction with Industry experts shaped my career at LPU
                 </p>
                 <p class="spp">Karan Mittal .CSE</p>
             </div>
-            <div class="col-3 ">
+            <div class=" item diversity2">
                 <img src="./img/tanya_arora.png">
                 <p class="sp1">State of the art infrastructure and experienced faculty nurtured my aspirations
                 </p>
@@ -488,14 +633,14 @@
                 </p>
                 
             </div>
-            <div class="col-3 ">
+            <div class=" item diversity2">
                 <img src="./img/satyam.png">
                 <p class="sp1">Hands-on experience, state of the art lab facilities gave me practical exposure
                 </p>
                 <p class="spp">Satyam Kumar .MECH</p>
                 
             </div>
-            <div class="col-3 ">
+            <div class=" item diversity2">
                 <img src="./img/ayush.png">
                 <p class="sp1">Research, entrepreneurship and campus recruitment opportunities all at one place
                 </p>
@@ -621,25 +766,53 @@
   </section>
 
     </main>
-    <script>
-        $(document).ready(function(){
-                $(".accoridan_head").click(function(){
-                    const currId = $(this).attr('id')
-                  // a4
-                    $(this).toggleClass("open")
+    
 
-                  var arr = []
-                  $(".accoridan_head").each(function() {
-                      const id = $(this).attr('id')
-                      if(id && id!==currId) {
-                        arr.push(id)
-                      }
-                  })
+<!-- // -->
 
-                  jQuery.each(arr, function(i, val) {
-                    $("#"+val).removeClass("open")
-                }) }) })
-    </script>
+
+<script>
+    $(document).ready(function(){
+            $(".accoridan_head").click(function(){
+                const currId = $(this).attr('id')
+              // a4
+                $(this).toggleClass("open")
+
+              var arr = []
+              $(".accoridan_head").each(function() {
+                  const id = $(this).attr('id')
+                  if(id && id!==currId) {
+                    arr.push(id)
+                  }
+              })
+
+              jQuery.each(arr, function(i, val) {
+                $("#"+val).removeClass("open")
+            }) }) 
+            $('#testimonial').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 1,
+    dots: true
+})
+$('#testimonial2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 9,
+    dots: true
+})
+$('#testimonial3').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    items: 3,
+    dots: true
+})
+            
+            })
+</script>
 </body>
 
 </html>

@@ -13,7 +13,15 @@
         content: "";
     }
 
-
-
-
+    img{
+        width:100%;
+    }
+}
+@media screen and (max-width: 425px){
+    /* .container{
+        width:200%;
+    }
+    img{
+        width:200%;
+    } */
 }

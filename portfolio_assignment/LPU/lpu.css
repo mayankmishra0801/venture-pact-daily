@@ -148,11 +148,18 @@ body{
  }
 
  .navbar-second{
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
  }
 
 
+.testimona{
+  width:100%;
+ 
 
+}
+.testimon{
+  width:50%;
+}
 
   
 
@@ -169,7 +176,57 @@ body{
 /* ----- Faang -----*/
 .faang{
    padding-top: 100px;
+  
    
+  }
+
+  .banner .container {
+    DISPLAY: FLEX;
+    ALIGN-ITEMS: CENTER;
+}
+
+  .sanjay{
+    padding-top: 40px;
+    height: 482px;
+width: 440px;
+/* left: 59px; */
+/* top: -4114px; */
+border-radius: 10px;
+
+  }
+
+  .ctc1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+  }
+
+  .col-6a{
+
+  }
+
+  .ctc1 > h2{
+    /* padding-left: -10px; */
+    /* align-items: start; */
+    
+ 
+  }
+  .ctc2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+/* 
+  .item img{
+    width: 10px;
+    height: 100px;
+  } */
+
+  .item img{
+    width:25%;
   }
 
   .faang h2{
@@ -358,7 +415,11 @@ color:#fff;
 
 /* Company Name */
 .company_name img{
-  width:100%;
+  float: left;
+  display: flex;
+  width:10%;
+  align-items: center;
+  justify-content: center;
 }
 
 .crores img{
@@ -448,6 +509,14 @@ color:#585858;
   border:1px solid #dddddd;
   background: #dddddd;
 }
+.ctc1{
+  /* width:25%;
+  margin-right: 20px; */
+}
+.ctc2{
+  /* width:25%;
+  margin-right: 20px; */
+}
 .dream{
   /* padding: 20px 20px; */
   font-family: Montserrat;
@@ -461,6 +530,8 @@ width: 517px;
 left: -629px;
 top: -901px;
 border-radius: nullpx; */
+width:100%;
+
 
 
 
@@ -539,6 +610,13 @@ text-align: left;
 }
 
 
+.company_name{
+  width:100%;
+
+}
+.brand_logo{
+  width:100%;
+}
 /* speak_placement */
 .speak {
   display: flex;
@@ -684,11 +762,27 @@ text-align: left;
 .student_diversity {
    display: flex;
    margin: 10px;
+
+}
+.diversity{
+  /* width:30%; */
 }
 
-.student_diversity img{
+/* .student_diversity{
   width:100%;
-} 
+} */
+.diversity1{
+  width:100%;
+}
+
+.diversity2{
+  /* width:30%; */
+}
+
+
+/* .student_diversity img{
+  width:100%;
+}  */
 
 
 
@@ -772,6 +866,35 @@ text-align: left;
     border: 2px solid #F37335;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+
+  .accoridan_head {
+    background: #fff;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  .accordian_body {
+    padding: 20px;
+    display: none;
+  }
+  .accoridan_head::after {
+    content: "";
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #fff;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+  .accoridan_head::before {
+    content: "";
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #222;
+    position: absolute;
+    right: 13px;
+    top: 15px;
   }
   .acco{
     padding: 50px;

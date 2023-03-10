@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *,*::after,*::before{
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +9,7 @@
     background: transparent;
     list-style: none;
 }
-[class^="col-"] {
+[class^="col-"]{
     float: left;
     padding: 0 15px;
   }
@@ -80,6 +82,7 @@ body{
  .navigation{
   display: flex;
   height: 80px;
+  border-bottom: 1px solid #ddd;
 
 
  }
@@ -88,6 +91,7 @@ body{
  }
  .logo img{
   width:80%;
+
  }
 
  .navbar{
@@ -107,6 +111,7 @@ body{
   text-decoration: none;
   color:#343434;
   font-size: 13px;
+  
  }
 
  .navbar-links li a:hover, .navbar-links li a.active{
@@ -175,7 +180,7 @@ body{
 
 /* ----- Faang -----*/
 .faang{
-   padding-top: 100px;
+   /* padding-top: 100px; */
   
    
   }
@@ -255,7 +260,8 @@ text-align: left;
   /* margin-top: 20px; */
   /* line-height: 2; */
 
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
+  font-family: 'Poppins', sans-serif;
 font-size: 16px;
 font-weight: 400;
 line-height: 29px;
@@ -784,6 +790,17 @@ text-align: left;
   width:100%;
 }  */
 
+.focussed_activity{
+  font-size: 12px;
+  font-family: Montserrat;
+  font-family: Montserrat;
+/* font-size: 16px; */
+font-weight: 200;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+
+}
 
 
 
@@ -796,7 +813,7 @@ text-align: left;
 /*.............Tab Switching  */
 .wrapper {
     /* max-width: 640px; */
-    width: 100%;
+    /* width: 100%; */
      /* border-bottom: 2px solid red; */
   }
 
@@ -845,6 +862,10 @@ text-align: left;
   }
   #tab1 {
     display: block;
+  }
+
+  #tab2{
+    /* display: block; */
   }
 
   table th{
